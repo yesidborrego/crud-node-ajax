@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'public'))); // Static files
 // Middlewares
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
-app.use(express.json());
+app.use(express.json())
 
 // routes
 app.use('/', routes);
